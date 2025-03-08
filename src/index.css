@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+
+/* @layer screens {
+  @media (min-width: 320px) {
+    .xs\:text-4xl {
+      font-size: 2.25rem;
+    }
+  }
+} */

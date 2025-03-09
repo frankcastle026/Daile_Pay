@@ -39,6 +39,7 @@ const WhyUs = () => {
     <motion.div
       ref={ref}
       className='text-black flex flex-col items-center justify-center px-4 min-h-screen'
+      id='WhyUs'
       variants={containerVariants}
       initial='hidden'
       animate={controls}

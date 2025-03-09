@@ -1,20 +1,20 @@
-import React ,{ useState } from 'react'
+import React, { useState } from 'react';
 
 const Nav = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const toggleMenu = () => setIsOpen(!isOpen);
-    const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
   return (
     <div>
-      <nav className="bg-body-tertiary fixed top-0 left-0 right-0 shadow-md z-50">
+      <nav className="bg-body-tertiary bg-opacity-70 backdrop-blur-md fixed top-0 left-0 right-0 shadow-md z-50">
         <div className="container mx-auto px-4 flex items-center justify-between h-16">
-          <a href="#" className="text-white text-xl font-bold"> <img src='/Dailelogo.png' className='h-20'/> </a>
-          <button
-            className="text-white lg:hidden"
-            onClick={toggleMenu}
-          >
+          <a href="#" className="text-white text-xl font-bold">
+            <img src="/Dailelogo.png" className="h-20" alt="Logo" />
+          </a>
+          <button className="text-white lg:hidden" onClick={toggleMenu}>
             <svg
               className="w-6 h-6"
               fill="none"
@@ -31,9 +31,9 @@ const Nav = () => {
             </svg>
           </button>
           <div className="hidden lg:flex space-x-6">
-            <a href="#" className="text-black hover:text-gray-500">Home</a>
-            <a href="#" className="text-black hover:text-gray-500">Features</a>
-            <a href="#" className="text-black hover:text-gray-500">Pricing</a>
+            <a href="#Intro" className="text-black hover:text-gray-500">Home</a>
+            <a href="#About" className="text-black hover:text-gray-500">Features</a>
+            <a href="#Contact" className="text-black hover:text-gray-500">Contact</a>
             <div className="relative">
               <button
                 onClick={toggleDropdown}
@@ -85,9 +85,9 @@ const Nav = () => {
               </svg>
             </button>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-800 hover:text-gray-600">Home</a></li>
-              <li><a href="#" className="text-gray-800 hover:text-gray-600">Features</a></li>
-              <li><a href="#" className="text-gray-800 hover:text-gray-600">Pricing</a></li>
+              <li><a href="#Intro" className="text-gray-800 hover:text-gray-600">Home</a></li>
+              <li><a href="#About" className="text-gray-800 hover:text-gray-600">Features</a></li>
+              <li><a href="#Contact" className="text-gray-800 hover:text-gray-600">Contact</a></li>
               <li className="relative">
                 <button
                   onClick={toggleDropdown}
@@ -108,7 +108,7 @@ const Nav = () => {
         </div>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

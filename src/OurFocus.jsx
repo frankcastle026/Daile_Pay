@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const OurFocus = () => {
   return (
-    <div className="px-8 py-12">
+    <div className="px-8 py-12" id='OurFocus'>
       {/* Animated Header */}
       <h1 className="text-6xl font-bold text-center mb-12 flex justify-center gap-2">
         <motion.span

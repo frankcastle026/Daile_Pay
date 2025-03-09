@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div 
       ref={ref} 
-      className='text-black flex flex-col items-center justify-center px-4'>
+      className='text-black flex flex-col items-center justify-center px-4' id='About'>
       
       <motion.h1
         initial={{ opacity: 0, y: -50 }}

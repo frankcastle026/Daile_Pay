@@ -21,19 +21,19 @@ const App = () => {
         if (entry.isIntersecting) {
           switch (entry.target.id) {
             case 'intro':
-              setBgImage('/paper_2.jpg');
+              setBgImage('/brown_paper_4.jpg');
               break;
             case 'about':
-              setBgImage('/paper_3.jpg');
+              setBgImage('/brown_paper_3.jpg');
               break;
             case 'whyus':
-              setBgImage('/paper_4.jpg');
+              setBgImage('/brown_paper_2.jpg');
               break;
             case 'ourfocus':
-              setBgImage('/paper_5.jpg');
+              setBgImage('/brown_paper_1.jpg');
               break;
             default:
-              setBgImage('/paper_1.jpg');
+              setBgImage('/brown_paper_5.jpg');
           }
         }
       });
